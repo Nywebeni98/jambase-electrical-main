@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hlathi Electrical Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>About Hlathi Electrical Services</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="quotation.html" class="nav-link active">Get Quote</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for reliable electrical services</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to help with all your electrical needs. Contact us today for a free quote!</p>
+
+                    <!-- Service Locations -->
+                    <div class="service-locations">
+                        <h3><i class="fas fa-map-marker-alt"></i> Our Service Locations</h3>
+                        <div class="locations-grid">
+                            <div class="location-card">
+                                <h4><i class="fas fa-map-pin"></i> Hermanus Location</h4>
+                                <p><strong>30 Nama Street</strong></p>
+                                <p>Zwelihle, Hermanus</p>
+                                <p>Western Cape</p>
+                            </div>
+                            <div class="location-card">
+                                <h4><i class="fas fa-map-pin"></i> Cape Town Location</h4>
+                                <p><strong>40 Sixwila Crescent</strong></p>
+                                <p>Cape Town</p>
+                                <p>Western Cape</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone Numbers</h3>
+                                <p>066 115 7049</p>
+                                <p>082 420 6517</p>
+                                <p>073 879 1257</p>
+                            </div>
+                            <script>
+                                function makeCall(phoneNumber) {
+                                    // Ensure it's a valid tel: link
+                                    window.location.href = 'tel:' + phoneNumber;
+                                }
+                            </script>
+
+
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:hlathielectricalservices@gmail.com">hlathielectricalservices@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>
+                                    <a href="https://wa.me/27661157049?text=Hi%20I%20need%20help%20with%20an%20electrical%20problem" target="_blank">066 115 7049</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p>Saturday: 8:00 AM - 4:00 PM</p>
+                                <p>Sunday: Emergency calls only</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-contact-buttons">
+                        <a href="https://wa.me/27661157049?text=Hi%20I%20need%20help%20with%20an%20electrical%20problem" class="btn btn-primary whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Us
+                        </a>
+                        <a href="tel:0661157049" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" action="mailto:hlathielectricalservices@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Preferred Service Location</label>
+                            <select id="location" name="location">
+                                <option value="">Select location</option>
+                                <option value="hermanus">Hermanus - 30 Nama Street, Zwelihle</option>
+                                <option value="cape-town">Cape Town - 40 Sixwila Crescent</option>
+                                <option value="other">Other (please specify in message)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="washing-machine">Washing Machine Repair</option>
+                                <option value="stove-oven">Stove/Oven Repair</option>
+                                <option value="fridge">Fridge Repair</option>
+                                <option value="house-wiring">House Wiring</option>
+                                <option value="circuit-breaker">Circuit Breaker Repair</option>
+                                <option value="fault-finding">Fault Finding</option>
+                                <option value="maintenance">General Maintenance</option>
+                                <option value="emergency">Emergency Service</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please describe your electrical issue or service needed..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+
+                    <div class="form-note">
+                        <p><strong>Note:</strong> For faster response, consider using WhatsApp or calling directly. Email responses may take up to 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Our Primary Location - Hermanus</h2>
+            <div class="location-info">
+                <p><strong>30 Nama Street, Zwelihle, Hermanus, Western Cape</strong></p>
+                <p>We also service the Cape Town area from our second location at 40 Sixwila Crescent.</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.8004965520727!2d19.21003967639709!3d-34.431822373016516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dce0b15709385c9%3A0xbe6a6d00ec81ba16!2s30%20Nama%2C%20Zwelihle%2C%207200!5e0!3m2!1sen!2sza!4v1750003142150!5m2!1sen!2sza"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p class="map-note">We serve both Hermanus and Cape Town areas. Contact us to confirm service availability in your specific location.</p>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact-section">
+        <div class="container">
+            <div class="emergency-banner">
+                <div class="emergency-content">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Electrical Emergency?</h2>
+                    <p>Don't wait - electrical emergencies can be dangerous. Contact us immediately for urgent repairs.
+                    </p>
+                </div>
+                <div class="emergency-buttons">
+                    <a href="tel:+27824206517" class="btn btn-emergency">
+                        <i class="fas fa-phone"></i> Emergency Call
+                    </a>
+                    <a href="https://wa.me/27661157049?text=EMERGENCY:%20I%20need%20urgent%20electrical%20help" class="btn btn-primary whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Emergency WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hlathi Electrical Services</h3>
+                    <p>Over 20 years of trusted electrical services</p>
+                    <p>Serving Hermanus and Cape Town areas</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Locations</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 30 Nama Street, Zwelihle, Hermanus</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 40 Sixwila Crescent, Cape Town</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> 066 115 7049</p>
+                    <p><i class="fas fa-phone"></i> 082 420 6517</p>
+                    <p><i class="fas fa-envelope"></i> hlathielectricalservices@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hlathi Electrical Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27661157049?text=Hi%20I%20need%20help%20with%20an%20electrical%20problem" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+    <style>
+        /* Additional styles for location cards */
+        
+        .service-locations {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .service-locations h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .location-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #3498db;
+        }
+        
+        .location-card h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .location-card p {
+            margin: 0.25rem 0;
+            color: #666;
+        }
+        
+        .location-info {
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #e8f4f8;
+            border-radius: 8px;
+        }
+        
+        .location-info p {
+            margin: 0.5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .locations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+
+</html>

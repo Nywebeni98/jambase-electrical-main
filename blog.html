@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Blog - Hlathi Electrical Services | Electrical Tips & Company News</title>
+    <meta name="description" content="Read the latest electrical tips, safety advice, and company news from Hlathi Electrical Services. Learn about our journey and electrical expertise in Hermanus & Cape Town.">
+    <meta name="keywords" content="electrical blog, electrical tips Hermanus, electrical safety Cape Town, Hlathi Electrical news, electrical advice, appliance maintenance tips">
+    <meta name="author" content="Hlathi Electrical Services">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog - Hlathi Electrical Services | Electrical Tips & Company News">
+    <meta property="og:description" content="Read the latest electrical tips, safety advice, and company news from Hlathi Electrical Services.">
+    <meta property="og:image" content="https://hlathielectrical.co.za/images/blog-hlathi-electrical.jpg">
+    <meta property="og:url" content="https://hlathielectrical.co.za/blog.html">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hlathielectrical.co.za/blog.html">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://hlathielectrical.co.za/"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://hlathielectrical.co.za/blog.html"
+            }]
+        }
+    </script>
+
+    <style>
+        /* Blog-specific styles */
+        
+        .blog-hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .blog-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .blog-hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .blog-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        
+        .blog-content {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        
+        .blog-post {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 64px;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            background: #000;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .blog-post-content {
+            padding: 40px;
+        }
+        
+        .blog-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            color: #64748b;
+        }
+        
+        .blog-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .blog-post h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #1e293b;
+        }
+        
+        .blog-post p {
+            font-size: 1.125rem;
+            color: #374151;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        
+        .founder-story {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .founder-content {
+            padding: 48px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        
+        .founder-badge {
+            background: #fbbf24;
+            color: #1e40af;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .founder-story h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        
+        .founder-story p {
+            color: #bfdbfe;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        
+        .founder-story strong {
+            color: white;
+        }
+        
+        .feature-grid {
+            display: grid;
+            gap: 16px;
+        }
+        
+        .feature-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 24px;
+        }
+        
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            color: #fbbf24;
+            margin-bottom: 12px;
+        }
+        
+        .feature-item h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .feature-item p {
+            color: #bfdbfe;
+            font-size: 1rem;
+        }
+        
+        .uvu-section {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            color: white;
+        }
+        
+        .uvu-content {
+            padding: 48px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        
+        .uvu-badge {
+            background: #fbbf24;
+            color: #047857;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .uvu-section h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        
+        .uvu-section p {
+            color: #a7f3d0;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        
+        .uvu-section strong {
+            color: white;
+        }
+        
+        .uvu-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 32px;
+        }
+        
+        .uvu-feature {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+        
+        .gallery {
+            padding: 40px;
+        }
+        
+        .gallery h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 16px;
+            color: #1e293b;
+        }
+        
+        .gallery-description {
+            font-size: 1.125rem;
+            color: #64748b;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        
+        .gallery-item {
+            aspect-ratio: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .services-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+        
+        .service-showcase-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .service-showcase-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-header {
+            height: 200px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-header.blue {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+        
+        .service-header.yellow {
+            background: linear-gradient(135deg, #eab308 0%, #d97706 100%);
+        }
+        
+        .service-header.green {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        
+        .service-showcase-icon {
+            width: 64px;
+            height: 64px;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-showcase-card:hover .service-showcase-icon {
+            transform: scale(1.1);
+        }
+        
+        .service-showcase-content {
+            padding: 24px;
+        }
+        
+        .service-showcase-badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+        
+        .service-showcase-badge.blue {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .service-showcase-badge.yellow {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        .service-showcase-badge.green {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        .service-showcase-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1e293b;
+        }
+        
+        .service-showcase-content p {
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+        
+        .blog-cta {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .blog-cta-content {
+            position: relative;
+            padding: 48px;
+            text-align: center;
+        }
+        
+        .blog-cta h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        
+        .blog-cta p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        
+        .blog-cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+        
+        .btn-yellow {
+            background: #fbbf24;
+            color: #000001;
+            padding: 16px 32px;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+        
+        .btn-yellow:hover {
+            background: #f59e0b;
+        }
+        
+        .btn-white {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 16px 32px;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+        
+        .btn-white:hover {
+            background: white;
+            color: #1e40af;
+        }
+        /* Modal styles */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            cursor: pointer;
+        }
+        
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.5rem;
+            }
+            .founder-content,
+            .uvu-content {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .uvu-features {
+                grid-template-columns: 1fr;
+            }
+            .blog-cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .services-showcase {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* Animations */
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Hlathi Electrical Services</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="quotation.html" class="nav-link">Get Quote</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="blog.html" class="nav-link" aria-current="page">Blog</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="blog-hero" role="banner">
+        <div class="container">
+            <div class="blog-badge">
+                <i class="fas fa-bolt" aria-hidden="true"></i> Hlathi Electrical Services Blog
+            </div>
+            <h1>
+                Powering Innovation Through
+                <span class="gradient-text">Excellence</span>
+            </h1>
+            <p>
+                Join Lisa Msuthu Nywebeni on his inspiring journey from Capaciti training to building a cutting-edge electrical services business that's transforming communities through safety, innovation, and professional excellence.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="blog-content" role="main">
+        <div class="container">
+            <!-- Featured Video Post -->
+            <article class="blog-post animate-fade-in">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/qPLtnOppsBw?si=C-xrESp6lu9UcYKw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="blog-post-content">
+                    <div class="blog-meta">
+                        <div class="blog-meta-item">
+                            <i class="fas fa-calendar" aria-hidden="true"></i>
+                            <span>December 21, 2024</span>
+                        </div>
+                        <div class="blog-meta-item">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            <span>Lisa Msuthu Nywebeni</span>
+                        </div>
+                        <span class="service-showcase-badge yellow">Featured Video</span>
+                    </div>
+                    <h2>Electrical Safety Education: Protecting Lives Through Knowledge</h2>
+                    <p>
+                        Watch our comprehensive electrical safety educational video that demonstrates our commitment to community safety and professional excellence. This video showcases the high-quality educational content we create to ensure electrical safety awareness reaches
+                        every household and business in our community.
+                    </p>
+                    <div class="quick-contact-buttons">
+                        <a href="https://www.facebook.com/profile.php?id=61577600998268" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-facebook" aria-hidden="true"></i> Follow on Facebook
+                        </a>
+                        <a href="https://www.tiktok.com/@kwa_hlathi_nentozabo2.0?_t=ZM-8xOQS0Mzkij&_r=1" target="_blank" class="btn whatsapp-btn">
+                            <i class="fab fa-tiktok" aria-hidden="true"></i> Watch on TikTok
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Founder's Story Section -->
+            <article class="blog-post founder-story animate-fade-in">
+                <div class="founder-content">
+                    <div>
+                        <div class="founder-badge">
+                            <i class="fas fa-award" aria-hidden="true"></i> Founder's Journey
+                        </div>
+                        <h3>From Vision to Reality</h3>
+                        <p>
+                            I'm <strong>Lisa Msuthu Nywebeni</strong>, and my journey to revolutionize the electrical services industry began with a vision to transform our family business through cutting-edge skills and innovative approaches. This transformation
+                            was made possible through the exceptional training I received at both <strong>UVU Africa</strong> and <strong>Capaciti</strong>.
+                        </p>
+                        <p>
+                            What started as a traditional family electrical business has evolved into a comprehensive service provider that combines technical excellence with digital innovation. Through collaboration with incredibly talented youth who share the same passion for
+                            excellence, we're not just building a business – we're creating a movement that prioritizes safety, quality, and community empowerment.
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 16px; margin-top: 24px;">
+                            <i class="fas fa-chart-line feature-icon" aria-hidden="true"></i>
+                            <span style="font-size: 1.25rem; font-weight: 600;">Transforming Communities Through Excellence</span>
+                        </div>
+                    </div>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-users feature-icon" aria-hidden="true"></i>
+                            <h4>Collaborative Excellence</h4>
+                            <p>Working with talented youth to deliver innovative electrical solutions</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bolt feature-icon" aria-hidden="true"></i>
+                            <h4>Safety First</h4>
+                            <p>Prioritizing electrical safety education and professional installation</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-award feature-icon" aria-hidden="true"></i>
+                            <h4>Capaciti Training</h4>
+                            <p>Leveraging world-class training to build exceptional service standards</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- UVU Africa Journey Section -->
+            <article class="blog-post uvu-section animate-fade-in">
+                <div class="uvu-content">
+                    <div>
+                        <div class="uvu-badge">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i> UVU Africa Journey
+                        </div>
+                        <h3>Where It All Began</h3>
+                        <p>
+                            My transformative journey began at <strong>UVU Africa in 2023</strong>, where I joined the
+                            <strong> Youth in Business</strong> program and enrolled in their comprehensive digital program. I came with a clear mission: to acquire the skills needed to elevate our family business to new heights.
+                        </p>
+                        <p>
+                            At UVU Africa, I was introduced to an exceptional <strong>IT program</strong> that proved to be a game-changer. I learned website development, mastered the art of pitching, and gained the confidence that would become the foundation
+                            of my entrepreneurial success.
+                        </p>
+                        <p>
+                            Our family business had always existed, but we were operating in the dark ages of marketing – relying solely on word-of-mouth and basic pamphlets. UVU Africa opened my eyes to the power of
+                            <strong> digital marketing</strong> and gave me skills that complemented my electrical expertise, creating a powerful combination for business growth.
+                        </p>
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/CRmuQt7k9sQ?si=MczCOA87bNrtd5Ux&start=5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="uvu-features">
+                    <div class="uvu-feature">
+                        <i class="fas fa-users feature-icon" aria-hidden="true"></i>
+                        <h4>Youth in Business</h4>
+                        <p>Digital program that transformed my business mindset</p>
+                    </div>
+                    <div class="uvu-feature">
+                        <i class="fas fa-laptop-code feature-icon" aria-hidden="true"></i>
+                        <h4>IT Program</h4>
+                        <p>Website development and digital marketing mastery</p>
+                    </div>
+                    <div class="uvu-feature">
+                        <i class="fas fa-chart-line feature-icon" aria-hidden="true"></i>
+                        <h4>Business Growth</h4>
+                        <p>From pamphlets to professional digital presence</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Training Journey Gallery -->
+            <article class="blog-post animate-fade-in">
+                <div class="gallery">
+                    <h3>Our Capaciti Training Journey</h3>
+                    <p class="gallery-description">
+                        Witness the transformation and skill development that shaped our expertise. These moments capture the dedication, learning, and collaboration that built the foundation of Hlathi Electrical Services.
+                    </p>
+                    <div class="gallery-grid">
+                        <div class="gallery-item" onclick="openModal('https://i.ibb.co/3mNMW2B6/Whats-App-Image-2025-06-21-at-16-44-30-3c54358c.jpg')">
+                            <img src="https://i.ibb.co/3mNMW2B6/Whats-App-Image-2025-06-21-at-16-44-30-3c54358c.jpg" alt="Capaciti Training Session 1">
+                        </div>
+                        <div class="gallery-item" onclick="openModal('https://i.ibb.co/W4GH6bZc/Whats-App-Image-2025-06-21-at-16-44-30-13b0cbff.jpg')">
+                            <img src="https://i.ibb.co/W4GH6bZc/Whats-App-Image-2025-06-21-at-16-44-30-13b0cbff.jpg" alt="Capaciti Training Session 2">
+                        </div>
+                        <div class="gallery-item" onclick="openModal('https://i.ibb.co/DP1wG5JJ/Whats-App-Image-2025-06-21-at-16-44-31-b4374e96.jpg')">
+                            <img src="https://i.ibb.co/DP1wG5JJ/Whats-App-Image-2025-06-21-at-16-44-31-b4374e96.jpg" alt="Capaciti Training Session 3">
+                        </div>
+                        <div class="gallery-item" onclick="openModal('https://i.ibb.co/svyTw8DS/Whats-App-Image-2025-06-21-at-16-44-32-210df191.jpg')">
+                            <img src="https://i.ibb.co/svyTw8DS/Whats-App-Image-2025-06-21-at-16-44-32-210df191.jpg" alt="Capaciti Training Session 4">
+                        </div>
+                        <div class="gallery-item" onclick="openModal('https://i.ibb.co/qzNx1FN/Whats-App-Image-2025-06-21-at-16-44-32-cdf89947.jpg')">
+                            <img src="https://i.ibb.co/qzNx1FN/Whats-App-Image-2025-06-21-at-16-44-32-cdf89947.jpg" alt="Capaciti Training Session 5">
+                        </div>
+                        <div class="gallery-item" onclick="openModal('https://i.ibb.co/21PTHpWg/Whats-App-Image-2025-06-21-at-16-44-33-0eee3da7.jpg')">
+                            <img src="https://i.ibb.co/21PTHpWg/Whats-App-Image-2025-06-21-at-16-44-33-0eee3da7.jpg" alt="Capaciti Training Session 6">
+                        </div>
+                        <div class="gallery-item" onclick="openModal('https://i.ibb.co/v4sPGvKb/Whats-App-Image-2025-06-21-at-16-44-33-e523d639.jpg')">
+                            <img src="https://i.ibb.co/v4sPGvKb/Whats-App-Image-2025-06-21-at-16-44-33-e523d639.jpg" alt="Capaciti Training Session 7">
+                        </div>
+                        <div class="gallery-item" onclick="openModal('https://i.ibb.co/NdR36Ykm/Whats-App-Image-2025-06-21-at-16-44-34-f441f0cb.jpg')">
+                            <img src="https://i.ibb.co/NdR36Ykm/Whats-App-Image-2025-06-21-at-16-44-34-f441f0cb.jpg" alt="Capaciti Training Session 8">
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <p style="font-size: 1.125rem; color: #374151; margin-bottom: 24px;">
+                            These images showcase the intensive training, collaborative learning environment, and the talented individuals who contributed to building our expertise. At Capaciti, we learned not just technical skills, but the importance of teamwork, innovation, and
+                            community impact.
+                        </p>
+                        <a href="about.html" class="btn btn-primary" style="padding: 12px 32px;">
+                            Learn More About Our Training
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hlathi Electrical Services</h3>
+                    <p>Over 20 years of trusted electrical services in Hermanus and Cape Town</p>
+                    <p>Professional electricians serving Western Cape</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:0661157049">066 115 7049</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:0824206517">082 420 6517</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:0738791257">073 879 1257</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:hlathielectricalservices@gmail.com">hlathielectricalservices@gmail.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Areas</h3>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Hermanus & Surrounding Areas</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Cape Town & Suburbs</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Western Cape Region</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Our Electricians</a>
+                    <a href="services.html">Electrical Services</a>
+                    <a href="contact.html">Contact & Locations</a>
+                    <a href="quotation.html">Service Pricing</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hlathi Electrical Services. All rights reserved. | Professional Electrical Services Hermanus & Cape Town</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27661157049?text=Hi%20I%20need%20help%20with%20an%20electrical%20problem" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact Hlathi Electrical Services via WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Modal for image gallery -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <img id="modalImage" src="/placeholder.svg" alt="Gallery Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Image modal functionality
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all blog posts for animation
+        document.querySelectorAll('.blog-post, .service-showcase-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

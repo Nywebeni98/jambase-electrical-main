@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hlathielectrical.co.za/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /contact.html
+=======
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hlathielectrical.co.za/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /contact.html
+>>>>>>> 98a7726c921efc4e517b810d3863ca165dcd3d0f
+Allow: /quotation.html
